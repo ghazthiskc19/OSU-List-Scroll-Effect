@@ -73,7 +73,7 @@ function scrollEffect(element){
     let formula0to50 = Math.round((1 - (element.getBoundingClientRect().top + (element.clientHeight / 2)) / (window.innerHeight / 2) ) * multplier);
     let formula50to100 = -Math.round((1 - (element.getBoundingClientRect().top + (element.clientHeight / 2)) / (window.innerHeight / 2) ) * multplier);
     liList.forEach(() =>{
-        if(formula0to50 >= -170 && formula0to50 <= 170){
+        if(formula0to50 >= -200 && formula0to50 <= 200){
             if(formula0to50 <= 1 ){
                 element.style.transform = `translateX(${formula50to100}px)`;
             }else{
